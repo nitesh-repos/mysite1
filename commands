@@ -1,4 +1,4 @@
-python3 -m venv myvenv
+python3 -m venv myvenv    (virtualenv --python=python3.4 myvenv) for PythonAnywhere environment
 source myvenv/bin/activate
 pip install django==1.9       ||       reinstall pip and then try
 django-admin startproject mysite .
@@ -15,3 +15,8 @@ git init    # to Initializing the git repository in  current location
 create .gitignore file with all files which to want to exclude
 git add -A .   # adding current location files in repository
 git commit -m "ur comment"    # finalise like snapshot with comment
+git config --global user.email niteshnanotkar@gmail.com
+git config --global user.name niteshacc
+git remote add origin https://github.com/niteshacc/mysite1.git
+git push -u origin master  # to hook up the Git repository on your computer to the one up on GitHub.
+git clone https://github.com/niteshacc/mysite1.git       # to clone repository anywhere
