@@ -1,0 +1,17 @@
+python3 -m venv myvenv
+source myvenv/bin/activate
+pip install django==1.9       ||       reinstall pip and then try
+django-admin startproject mysite .
+python manage.py migrate  # To create a database for website
+python manage.py runserver  # To start webserver
+python manage.py startapp blog    # To create seprate application inside project
+# dont forget to add entry inside installed apps in settings.py of blog
+#  to tell Django that it should use it.
+python manage.py makemigrations blog  # to update database
+
+python manage.py createsuperuser   # to create admin user after making changes in admin.py
+yum install git
+git init    # to Initializing the git repository in  current location
+create .gitignore file with all files which to want to exclude
+git add -A .   # adding current location files in repository
+git commit -m "ur comment"    # finalise like snapshot with comment
